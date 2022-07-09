@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>Etch-a-Sketch</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="wrapper">
+    <header>
+      <nav>
+      <h1 class="logo">Etch-a-Sketch</h1>
+      <img class="ham_bar" src="assets/bar.png" />
+      </nav>
+    </header>
+    <main>
+    <section class="controls">
+      <div class="flex_backclr">
+        <div class="black_clr circles"></div>
+        <div class="red_clr circles"></div>
+        <div class="blue_clr circles"></div>
+        <div class="orange_clr circles"></div>
+      </div>
+      <div class="slider">
+        <label>
+          <p class="slider_value">16 X 16</p>
+          <input id="sizeSlider" type="range" value="16" min="1" max="64" />
+        </label>
+      </div>
+      <div class="pen_clr">
+        <div class="black_clr circles"></div>
+        <div class="red_clr circles"></div>
+        <div class="blue_clr circles"></div>
+        <input type="color"/>
+      </div>
+      <div class="e_and_c">
+        <button>Eraser</button>
+        <button>Clear</button>
+      </div>
+      <div class="intensity_btns">
+        <div class="dark circles"></div>
+        <div class="light circles"></div>
+      </div>
+    </section>
+    <section class="canvas">
+      <div class="canvas_container"></div>
+    </section>
+    </main>
+    </div>
+  </body>
 </html>
