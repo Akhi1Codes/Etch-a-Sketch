@@ -25,8 +25,8 @@
       <main>
         <section class="controls">
           <p class="headings">Background Color</p>
-          <div class="flex_backclr">
-            <div class="pink_clr circles"></div>
+          <div class="flex_backclr" id="background_colors">
+            <div class="white_clr circles"></div>
             <div class="cyan_clr circles"></div>
             <div class="orange_clr circles"></div>
             <div class="yellow_clr circles"></div>
@@ -40,12 +40,12 @@
           <p class="headings">Grid Size</p>
           <div class="slider">
             <label>
-              <p class="slider_value" id="slide_val">16</p>
+              <p class="slider_value" id="slide_val">4</p>
               <input
                 id="sizeSlider"
                 class="slider"
                 type="range"
-                value="16"
+                value="4"
                 min="1"
                 max="64"
                 autocomplete="off"
@@ -53,15 +53,8 @@
             </label>
           </div>
           <p class="headings">Paint Color</p>
-          <div class="pen_clr">
-            <div class="yellow_clr circles"></div>
-            <div class="green_clr circles"></div>
-            <div class="red_clr circles"></div>
-            <div class="blue_clr circles"></div>
-            <div class="black_clr circles"></div>
-          </div>
           <div>
-            <input type="color" class="color_selector"/>
+            <input type="color" class="color_selector" id="color-selector"/>
           </div>
           <p class="headings">Intersity</p>
           <div class="intensity_btns">
@@ -75,7 +68,22 @@
         </section>
         <section class="canvas">
           <div class="canvas_container" id="grid_container">
-            
+            <div class="grid_elements"></div>
+            <div class="grid_elements"></div>
+            <div class="grid_elements"></div>
+            <div class="grid_elements"></div>
+            <div class="grid_elements"></div>
+            <div class="grid_elements"></div>
+            <div class="grid_elements"></div>
+            <div class="grid_elements"></div>
+            <div class="grid_elements"></div>
+            <div class="grid_elements"></div>
+            <div class="grid_elements"></div>
+            <div class="grid_elements"></div>
+            <div class="grid_elements"></div>
+            <div class="grid_elements"></div>
+            <div class="grid_elements"></div>
+            <div class="grid_elements"></div>
           </div>
         </section>
       </main>
