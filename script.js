@@ -6,7 +6,6 @@ const grids = document.getElementById('grid_container');
 const gridElements = document.querySelectorAll(".grid_elements");
 const gridOn = document.getElementById('gridon');
 const gridOff = document.getElementById('gridoff');
-const erase = document.getElementById('eraser');
 const clear = document.getElementById('clear');
 const clrSelector = document.getElementById('color-selector');
 
@@ -15,7 +14,6 @@ backgroundColors.forEach(backgroundColor =>
     backgroundColor.addEventListener('click',function(){
         clr = getComputedStyle(backgroundColor).getPropertyValue("background-color");
         backcolor(clr)
-        clicked(clr)
     })
 )
 // Using the value to change background color
@@ -63,14 +61,19 @@ gridOff.addEventListener('click', function(){
     gridElements.forEach(gridElement => gridElement.style.border = null)
 })
 
+clear.addEventListener('click', function(){
+    const gridElements = document.getElementById('grid_container').querySelectorAll(".grid_elements");
+    gridElements.forEach(gridElement => gridElement.style.backgroundColor = null)
+})
 
-function clicked(color){
-    let gridElements = document.getElementById('grid_container').querySelectorAll(".grid_elements");
-    console.log(color)
-    gridElements.addEventListener('click', function(color){
-        gridElements.style.backgroundColor = color;
-    })
+function erased(){
+    const gridElements = document.getElementById('grid_container').querySelectorAll(".grid_elements");
+    gridElements.forEach(gridElement => gridElement.addEventListener('click', function(){
+        if(gridElement.style.backgroundColor !== grids.style.backgroundColor){
+            gridElement.style.backgroundColor = grids.style.backgroundColor
+        }else{
+            gridElement.style.backgroundColor = clrSelector.value;
+        }
+    }))
 }
-clicked()
-
 gridclr()
