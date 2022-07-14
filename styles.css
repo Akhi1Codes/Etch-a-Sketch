@@ -51,8 +51,8 @@ main {
   display: grid;
   grid-template-rows:repeat(var(--grid-rows),1fr);
   grid-template-columns:repeat(var(--grid-cols),1fr);
-  height: 550px;
-  width: 550px;
+  height: 40rem;
+  width: 40rem;
   border: 5px solid var(--white);
   background-color: var(--white);
   cursor:crosshair;
@@ -137,4 +137,27 @@ main {
 }
 .orange_clr {
   background-color: orange;
+}
+
+
+@media screen and (max-width: 450px){
+  main{
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
+  }
+  nav{
+    margin:0%;
+  }
+  .canvas_container{
+    margin-top: 2rem;
+    height: 22.2rem;
+    width: 22.2rem;
+  }
+  .headings {
+    margin-top: 1rem;
+  }
+  .controls{
+    margin: 1rem;
+  }
 }
