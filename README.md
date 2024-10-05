@@ -5,7 +5,7 @@ Etch-a-sketch is a drawing website where one can select colors to fill the grids
 
 It containes option to turn on and turn off the grid on the canvas,and option to change the background color of the canvas.
 
-Live Link : https://ar-akhil.github.io/Etch-a-Sketch
+Live Link : https://akhi1codes.github.io/Etch-a-Sketch/
 
 ## Screenshots
 
